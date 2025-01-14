@@ -1,0 +1,100 @@
+
+.box:hover{
+  
+  background-color: red;
+}
+
+.container {
+  /* display: inline-block; */
+  justify-content: center;
+  align-items: center;
+  text-align: center  ;
+  float:right;
+  margin-right: 80px;
+  
+}
+
+
+.fleet-info {
+  width: 300px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background-color: #eaf2f8;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: #4a90e2;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+
+/* Internal Fleet Info Styling  */
+.fleet-info {
+  grid-column: span 1;
+  background-color: #4da6ff;
+  color: white;
+  text-align: left;
+  padding: 16px;
+}
+
+.fleet-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.fleet-info ul li {
+  margin: 4px 0; 
+}
+ 
+.stock_pos1{
+  height: 136px;
+  width: 270px;
+  margin:10px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 14px;
+}
+.content{
+display:"inline-block";
+}
+.stock_container{
+  background-color: green;
+  height: 314px;
+  width: 900px;
+  display: inline-block;
+}
