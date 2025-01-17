@@ -83,10 +83,11 @@
 .stock_pos1{
   height: 136px;
   width: 270px;
+  /* width: 30%; */
   margin:10px;
   background-color: red;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 2%;
   margin-bottom: 14px;
 }
 .content{
@@ -96,5 +97,116 @@ display:"inline-block";
   background-color: green;
   height: 314px;
   width: 900px;
+  /* width: 65%; */
   display: inline-block;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  /* margin: 20px auto; */
+  margin:auto;
+  text-align: center;
+  display: inline-block;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #d9e3f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.trucks { background-color: #4f81bd; }
+.loader { background-color: #f79646; }
+.dozer { background-color: #9bbb59; }
+.poclane { background-color: #ffc000; }
+.jcb { background-color: #7f7f7f; }
+
+.chartHeading{
+  text-align: center;
+
+}
+.FleetChart{
+  /* float:left; */
+  display: inline-block;
+  width: 30%;
+  margin-right: 50px;
+}
+
+
+/***************************** Calendar styles ******************************************/
+.calendar{
+  /* display: inline-block; */
+  width:40.5%;
+  height:310px;
+  float:right;
+  margin:46px 76px 0px 0px;
+  background-color: greenyellow;
+  overflow: scroll;
+  /* position: sticky; */
+}
+
+h1 {
+	font-weight: 600;
+	margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	list-style: none;
+  padding:0px;
+	li {
+		display: flex;
+		width: 7rem;
+		height: 7rem;
+		margin: 0.25rem;
+		flex-flow: column;
+		border-radius: 0.2rem;
+		padding: 1rem;
+		font-weight: 300;
+		font-size: 0.8rem;
+		box-sizing: border-box;
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+
+		time {
+			font-size: 2rem;
+			margin: 0 0 1rem 0;
+			font-weight: 500;
+		}
+	}
+	.today {
+		time {
+			font-weight: 800;
+		}
+		background: #ffffff70;
+	}
+}
+.expand{
+position:absolute;
+width: 80%;
+height: 80%;
+top:10%;
+left:10%;
+z-index: 10;
+}
+.allignCalendar{
+  display: flex;
+}
+#toggleButton{
+  position: sticky;
+  z-index: 1;
 }
