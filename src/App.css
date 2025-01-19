@@ -3,25 +3,47 @@
   
   background-color: red;
 }
+/****************************  Stock Level *********************************/
+.stock_container{
+  background-color:white;
+  height: 314px;
+  width: 819px;
+  /* width: 65%; */
+  display: inline-block;
+}
 
+.stock_pos1{
+  height: 136px;
+  width: 246px;
+  margin:10px;
+  background-color: #A3D8DC;
+  display: inline-block;
+  margin-right: 2%;
+  color: rgb(65, 65, 63);
+  margin-bottom: 14px;
+  border-radius: 1rem;
+  text-align: center;
+}
+/*******************Internal Fleet Info Styling  ******************/
 .container {
   /* display: inline-block; */
   justify-content: center;
   align-items: center;
   text-align: center  ;
   float:right;
-  margin-right: 80px;
+  margin-top: 68px;
   
 }
-
-
 .fleet-info {
   width: 300px;
   border: 2px solid #4a90e2;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  grid-column: span 1;
+  background-color: #4da6ff;
+  color: white;
+  text-align: left;
 }
 
 .header {
@@ -60,46 +82,11 @@
 }
 
 
-/* Internal Fleet Info Styling  */
-.fleet-info {
-  grid-column: span 1;
-  background-color: #4da6ff;
-  color: white;
-  text-align: left;
-  padding: 16px;
-}
-
-.fleet-info ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
-
-.fleet-info ul li {
-  margin: 4px 0; 
-}
- 
-.stock_pos1{
-  height: 136px;
-  width: 270px;
-  /* width: 30%; */
-  margin:10px;
-  background-color: red;
-  display: inline-block;
-  margin-right: 2%;
-  margin-bottom: 14px;
-}
+/*************************** FleetChart ***************************/
 .content{
 display:"inline-block";
 }
-.stock_container{
-  background-color: green;
-  height: 314px;
-  width: 900px;
-  /* width: 65%; */
-  display: inline-block;
-}
+
 table {
   width: 80%;
   border-collapse: collapse;
@@ -143,10 +130,10 @@ tr:nth-child(even) {
 /***************************** Calendar styles ******************************************/
 .calendar{
   /* display: inline-block; */
-  width:40.5%;
+  width:41%;
   height:310px;
   float:right;
-  margin:46px 76px 0px 0px;
+  margin:10px 0px 0px 0px;
   background-color: greenyellow;
   overflow: scroll;
   /* position: sticky; */
@@ -206,7 +193,13 @@ z-index: 10;
 .allignCalendar{
   display: flex;
 }
-#toggleButton{
+#toggleButton {
   position: sticky;
-  z-index: 1;
+  top: 0;
+  z-index: 10;
+  background-color: white; 
+}
+.currentDate{
+  font-weight: bold;
+  font-size: 1.5rem;
 }

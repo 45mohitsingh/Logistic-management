@@ -10,10 +10,9 @@ const  App= () =>  {
   return (
     <div >
     <StockLevel />
-    <FleetInfo />
-    {/* <FleetChart/> */}
-    <FleetChart/>
     <Calendar/>
+    <FleetChart/>
+    <FleetInfo />
      </div> 
   );
 };

@@ -13,7 +13,7 @@ const handleToggle =()=>{
 
     return (
         <div  class={`calendar  ${isExpanded? "expand":""}`} id="dates">
-           {/* <button id="toggleButton" onClick={handleToggle}>{!isExpanded? "Expand":"Contract"}</button> */}
+           <button id="toggleButton" onClick={handleToggle}>{!isExpanded? "Expand":"Contract"}</button>
            <CalendarDates
            />
         </div>

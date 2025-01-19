@@ -9,23 +9,23 @@ const  StockLevel= () =>  {
      <div class="stock_container">
     
        <Capacity 
-         text={"Hello world"} 
+         text={"Fresh Tailing"} 
          class={"stock_pos1"}
        />
               <Capacity 
-         text={"Hello world"} 
+         text={"ROM Stock"} 
          class={"stock_pos1"}
        />
             <Capacity 
-         text={"Hello world"} 
+         text={"Tailing Pond"} 
          class={"stock_pos1"}
        />
               <Capacity 
-         text={"Hello world"} 
+         text={"Reject Yard"} 
          class={"stock_pos1"}
        />
               <Capacity 
-         text={"Hello world"} 
+         text={"Waigon loading site"} 
          class={"stock_pos1"}
        />
      
